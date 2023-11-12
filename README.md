@@ -1,6 +1,6 @@
 # HTTPost
 
-![Logo](./favicon.ico)
+![Logo](./logo.png)
 
 This is a lightweight API testing tool that runs directly in the browser. It provides a simple and intuitive interface for making API requests, testing endpoints, and viewing responses.
 
