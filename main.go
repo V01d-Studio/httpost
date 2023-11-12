@@ -8,7 +8,7 @@ import (
 func main() {
 	fs := http.FileServer(http.Dir("./"))
 	http.Handle("/static/", http.StripPrefix("/static/", fs))
-	http.Handle("/", http.FileServer(http.Dir("./")))
+	http.Handle("/", fs)
 
 	err := http.ListenAndServe(":54321", nil)
 	if err != nil {
