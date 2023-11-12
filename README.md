@@ -1,6 +1,8 @@
-# HTTPost
+<h1 align="center">HTTPost</h1>
 
-![Logo](./logo.png)
+<p align="center">
+  <img src="./logo.png" alt="Logo">
+</p>
 
 This is a lightweight API testing tool that runs directly in the browser. It provides a simple and intuitive interface for making API requests, testing endpoints, and viewing responses.
 
