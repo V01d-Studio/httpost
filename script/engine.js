@@ -33,12 +33,6 @@ function makeRequest() {
     });
 }
 
-document
-  .getElementById("body")
-  .addEventListener("input", () =>
-    highlightJSON(document.getElementById("body"))
-  );
-
 function toggleDarkMode() {
   const container = document.querySelector(".container");
   container.classList.toggle("dark-mode");
