@@ -34,9 +34,9 @@ function makeRequest() {
 }
 
 document
-  .getElementById("jsonInput")
+  .getElementById("body")
   .addEventListener("input", () =>
-    highlightJSON(document.getElementById("jsonOutput"))
+    highlightJSON(document.getElementById("body"))
   );
 
 function toggleDarkMode() {
