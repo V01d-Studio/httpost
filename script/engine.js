@@ -19,7 +19,7 @@ function makeRequest() {
       "Content-Type": "application/json",
       ...headers, // Include custom headers
     },
-    body: body,
+    body: method === "GET" ? undefined : body,
   })
     .then((response) => response.json())
     .then((data) => {

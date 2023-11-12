@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>API Tester</title>
+    <title>HTTPost - API Tester</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <div class="container">
+      <div class="header">
+        <h1>HTTPost</h1>
+        <p class="subtitle">Your Lightweight API Tester</p>
+      </div>
       <div class="request-section">
         <h2>API Request</h2>
         <select id="method">
@@ -17,13 +21,12 @@
           <option value="DELETE">DELETE</option>
         </select>
         <input type="text" id="url" placeholder="Enter URL" />
+        <textarea id="body" placeholder="Request body (if needed)"></textarea>
         <input
           type="text"
           id="headers"
           placeholder="Headers (comma-separated: key1:value1, key2:value2)"
         />
-
-        <textarea id="body" placeholder="Request body (if needed)"></textarea>
         <button onclick="makeRequest()">Send Request</button>
       </div>
       <div class="response-section">
